@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --height: 650px;
+        --width: 408px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eeeeee;
+      }
+      .card_box {
+        height: var(--height);
+        width: var(--width);
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 7px 10px 26px -11px rgba(0, 0, 0, 0.77);
+        -webkit-box-shadow: 7px 10px 26px -11px rgba(0, 0, 0, 0.77);
+        -moz-box-shadow: 7px 10px 26px -11px rgba(0, 0, 0, 0.77);
+      }
+
+      .circle {
+        position: absolute;
+        left: -146%;
+        top: -124%;
+        width: 1200px;
+        height: 1200px;
+        /* background-color: black; */
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #272b36;
+        z-index: 50;
+      }
+      .circle2 {
+        position: absolute;
+        left: -146%;
+        top: -121%;
+        width: 1182px;
+        height: 1215px;
+        /* background-color: black; */
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #ed6f21;
+        z-index: 30;
+      }
+
+      .circle3 {
+        position: absolute;
+        left: -147%;
+        top: -117%;
+        width: 1186px;
+        height: 1220px;
+        /* background-color: black; */
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #f59b11;
+        z-index: 10;
+      }
+      .circle4 {
+        position: absolute;
+        height: 146px;
+        width: 144px;
+        border-radius: 50%;
+        background-color: white;
+        z-index: 31;
+        top: 49%;
+        left: -11%;
+      }
+      .circle5 {
+        position: absolute;
+        height: 141px;
+        width: 195px;
+        border-radius: 50%;
+        background-color: white;
+        z-index: 29;
+        top: 50%;
+        left: 5%;
+      }
+      .image_box {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        z-index: 51;
+        border-radius: 50%;
+        background-color: #ed6f21;
+        top: 12%;
+        left: 27%;
+      }
+      .image_box img {
+        width: 93%;
+        height: 93%;
+        object-fit: cover;
+        clip-path: circle(50% at 50% 50%);
+        margin-top: 6.5px;
+        margin-left: 5.5px;
+      }
+      .username_box {
+        position: absolute;
+        z-index: 51;
+        height: 50px;
+        width: 206px;
+        /* background-color: #ed6f21; */
+        top: 40%;
+        left: 24%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+      }
+
+      .username_box h1 {
+        font-size: 26px;
+      }
+      .designation_box {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        /* background-color: #ed6f21; */
+        z-index: 51;
+        top: 45%;
+        left: 36%;
+      }
+      .designation_box p {
+        color: white;
+        font-size: 16px;
+      }
+      .employee_details {
+        width: 326px;
+        height: 163px;
+        /* background-color: black; */
+        position: absolute;
+        top: 69%;
+        left: 23%;
+        z-index: 100;
+      }
+
+      .employee_details p {
+        color: black;
+      }
+
+      .employee_details p span {
+        font-size: large;
+        font-weight: bold;
+      }
+      .company_logo {
+        position: absolute;
+        width: 252px;
+        height: 50px;
+        /* background-color: white; */
+        top: 2%;
+        left: 25%;
+        z-index: 51;
+      }
+
+      @media print {
+        .print_icard {
+          visibility: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card_box">
+      <div class="company_logo">
+        <img
+          src="https://sellergize.com/img/logos/logo_transparent_200.png"
+          alt=""
+        />
+      </div>
+      <div class="image_box">
+        <img
+          src="https://img.freepik.com/premium-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?w=2000"
+          alt=""
+        />
+      </div>
+      <div class="username_box">
+        <h1>
+          <span style="color: white">Siddhanth</span
+          ><span style="color: #ed6f21; margin-left: 8px">Chauhan</span>
+        </h1>
+      </div>
+      <div class="designation_box">
+        <p>DEVELOPER</p>
+      </div>
+      <div class="circle"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+      <div class="circle4"></div>
+      <div class="circle5"></div>
+      <div class="employee_details">
+        <p>
+          <span>ID</span>
+          <span style="font-size: 18px; font-weight: 500; margin-left: 26px"
+            >: 3424423244</span
+          >
+        </p>
+        <p>
+          <span>DOB</span>
+          <span style="font-size: 18px; font-weight: 500; margin-left: 7px"
+            >: 06/11/2000</span
+          >
+        </p>
+        <p>
+          <span>Email</span>
+          <span style="font-size: 18px; font-weight: 500"
+            >: chauhansiddhanth@gmail.com</span
+          >
+        </p>
+        <p>
+          <span>Phone</span>
+          <span style="font-size: 18px; font-weight: 500">: 896439329793</span>
+        </p>
+      </div>
+    </div>
+    <div class="print_icard" style="display: flex">
+      <button onclick="window.print()">Print</button>
+    </div>
+  </body>
+</html>
